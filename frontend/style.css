@@ -1,0 +1,110 @@
+html {
+  height: 100%;
+}
+body {
+  background-color: rgb(242, 242, 241);
+  height:100%
+}
+/** {
+  border: 1px solid red;
+}*/
+.container-fluid {
+  height: 100%;
+}
+.fullHeight {
+  bottom: 0;
+}
+.sidebar {
+  margin-left: 0 !important;
+  padding-left: 0;
+  border-radius: 0 !important;
+
+}
+.sidebarRow {
+  margin-left: 0;
+}
+.container-fluid {
+  padding-left: 0;
+}
+.table-of-contents {
+  margin-bottom: 0;
+}
+
+.table-of-contents a {
+  padding-left: 25px;
+  border-radius: 0px !important;
+}
+.page-header {
+  text-align: center;
+  margin-top: 5px;
+  padding-top: 0;
+}
+.navbar {
+  margin-bottom: -1px;
+  z-index: 1;
+  border-radius: 0 !important;
+
+}
+.fa {
+  font-size: 50px;
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-right: 0px;
+}
+h1 {
+  margin-left: 30px !important;
+}
+small {
+  margin-left: 150px;
+  margin-bottom: 100px !important;
+}
+.fa:hover {
+  cursor: pointer;
+}
+a img {
+  max-height: 25px;
+  float: right;
+}
+.karma {
+  float:left;
+  position: relative;
+  z-index:1;
+  bottom: ;
+  margin-left: 20px;
+  max-height: 80px;
+}
+.karmaBox {
+  position: relative;
+  bottom: 0;
+}
+.footer {
+  margin:0;
+  background-color: orange;
+
+}
+.quoteBox {
+  height: 100px;
+  background-color: white;
+}
+
+.bringToMiddle {
+  float: right;
+  text-align: center;
+
+}
+h1 {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+@media screen and (max-width: 750px) {
+  small {
+    display: none;
+  }
+  .primaryBody * {
+    text-align: center;
+  }
+  .quoteBox {
+    display: none;
+  }
+}

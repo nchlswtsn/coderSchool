@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EDU</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+
+  <script src="app.js"></script>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/readable/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body ng-app="coderSchool" ng-controller="MainCtrl">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <i ui-sref="home" class="fa fa-graduation-cap"></i>
+        <span class="bringToMiddle"><h1>E.D.U. <span><small>A Community for Learning.</small></span></h1></span>
+      </div>
+
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row fullHeight">
+      <div class="col-sm-3 sidebar">
+        <div class="row sidebarRow">
+          <div class="list-group table-of-contents">
+            <a class="list-group-item" ui-sref="category" >Physical Education
+              <img src="icons/football.png" alt="sport">
+            </a>
+            <a class="list-group-item" ui-sref="category" >Mathematics
+              <img src="icons/math filled.png" alt="math">
+            </a>
+            <a class="list-group-item" ui-sref="#node" >English Language
+              <img src="icons/book.png" alt="english">
+            </a>
+            <a class="list-group-item" ui-sref="#node" >Science
+              <img src="icons/test tube.png" alt="science">
+            </a>
+            <a class="list-group-item" ui-sref="#node" >Psychology
+              <img src="icons/mental state.png" alt="psychology">
+            </a>
+            <a class="list-group-item" ui-sref="#node" >History
+              <img src="icons/museum.png" alt="history">
+            </a>
+            <a class="list-group-item" ui-sref="#node" >Geography
+              <img src="icons/globe.png" alt="geography">
+            </a>
+            <a class="list-group-item" ui-sref="#node" >Health
+              <img src="icons/health.png" alt="health">
+            </a>
+            <a class="list-group-item" ui-sref="#node" >Foreign Languages
+              <img src="icons/google translate.png" alt="language">
+            </a>
+          </div>
+        </div>
+        <div class="row quoteBox">
+          <div class="col-sm-12 test">
+            <!-- <img src="http://www.placehold.it/300x150" alt=""> -->
+          </div>
+        </div>
+        <!-- <div class="row karmaBox">
+          <div class="col-sm-6">
+            <img class="karma" src="icons/karma.png" alt="karma">
+          </div>
+          <div class="col-sm-6"></div>
+        </div> -->
+
+
+      </div>
+      <div class="col-sm-9">
+
+<!-- PRIMARY BODY CONTENT AREA -->
+
+        <div class="row primaryBody">
+
+          <ui-view></ui-view>
+        </div>
+      </div>
+    </div>
+    <img class="karma" src="icons/karma.png" alt="karma">
+  </div>
+  <!-- <footer class="footer">
+    <span> thshssh</span> -->
+     <!-- <div class="container"> -->
+       <!-- <p class="text-muted">Place sticky footer content here.</p> -->
+     <!-- </div> -->
+   <!-- </footer> -->
+</body>
+</html>
