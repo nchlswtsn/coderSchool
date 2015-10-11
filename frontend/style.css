@@ -1,9 +1,7 @@
-html {
-  height: 100%;
-}
 body {
+  position: relative;
   background-color: rgb(242, 242, 241);
-  height:100%
+  z-index: -2;
 }
 /** {
 border: 1px solid red;
@@ -18,7 +16,9 @@ border: 1px solid red;
   margin-left: 0 !important;
   padding-left: 0;
   border-radius: 0 !important;
-
+}
+small {
+  margin-left: 100px !important;
 }
 .sidebarRow {
   margin-left: 0;
@@ -41,7 +41,7 @@ border: 1px solid red;
 }
 .navbar {
   margin-bottom: -1px;
-  z-index: 1;
+  z-index: -1;
   border-radius: 0 !important;
 
 }
@@ -68,9 +68,9 @@ a img {
 }
 .karma {
   float:left;
-  position: relative;
+  position: fixed;
   z-index:1;
-  bottom: ;
+  bottom: 0;
   margin-left: 20px;
   max-height: 80px;
 }
@@ -123,7 +123,12 @@ h1 {
 .karmaLogo {
   margin-top: 5px;
   margin-bottom: -10px !important;
+  cursor: pointer;
 }
 .red {
   color: red;
+}
+.pQuote {
+  padding-top: 15px;
+  padding-left: 25px;
 }

@@ -16,12 +16,12 @@
 <body ng-app="coderSchool" ng-controller="MainCtrl">
   <nav class="navbar navbar-default">
     <div class="container-fluid">
-      <div class="navbar-header karmaLogo">
+      <div class="navbar-header karmaLogo"  ui-sref="home">
         <img class="eduTitle" src="karmalogo.png" alt="EDUKarma">
         <!-- <i ui-sref="home" class="fa fa-graduation-cap"></i> -->
-        <span class="bringToMiddle"><h1><span class="KarmaTitle">Karma</span></h1></span>
+        <span class="bringToMiddle"><h1><span class="KarmaTitle">Karma</span><span><small>Learn. Share. Earn.</small></span></h1></span>
       </div>
-      <!-- <span><small>A Community for Learning.</small></span> -->
+
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
@@ -71,7 +71,9 @@
         </div>
         <div class="row quoteBox">
           <div class="col-sm-12 test">
-            <!-- <img src="http://www.placehold.it/300x150" alt=""> -->
+            <p class="pQuote"><i>An investment in knowledge pays the best interest.</i>
+              <br>
+              <small class="quoter">- Benjamin Franklin</small></p>
           </div>
         </div>
         <!-- <div class="row karmaBox">
@@ -93,6 +95,7 @@
     </div>
   </div>
 </div>
+
 <img class="karma" src="icons/karma.png" alt="karma">
 </div>
 <!-- <footer class="footer">
