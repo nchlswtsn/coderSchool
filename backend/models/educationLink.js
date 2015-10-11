@@ -5,7 +5,8 @@ var LinkSchema = new mongoose.Schema({
   category: {type: String, required: true},
   author: {type: String, required: true},
   url: {type: String, required: true}
-  votes: {type: Number, default: 0}
+  votes: {type: Number, default: 0},
+  created: Date.now()
 })
 
 LinkSchema.methods.upvote = function(cb){

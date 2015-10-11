@@ -40,31 +40,31 @@
       <div class="col-sm-3 sidebar">
         <div class="row sidebarRow">
           <div class="list-group table-of-contents">
-            <a class="list-group-item" ui-sref="category" >Physical Education
+            <a class="list-group-item" ui-sref="category" ng-click="categoryRoute('physicalEducation')" >Physical Education
               <img src="icons/football.png" alt="sport">
             </a>
-            <a class="list-group-item" ui-sref="category" >Mathematics
+            <a class="list-group-item" ui-sref="category" ng-click="categoryRoute('math')" >Mathematics
               <img src="icons/math filled.png" alt="math">
             </a>
-            <a class="list-group-item" ui-sref="#node" >English Language
+            <a class="list-group-item" ui-sref="category" ng-click="categoryRoute('englishLanguage')">English Language
               <img src="icons/book.png" alt="english">
             </a>
-            <a class="list-group-item" ui-sref="#node" >Science
+            <a class="list-group-item" ui-sref="category" ng-click="categoryRoute('science')" >Science
               <img src="icons/test tube.png" alt="science">
             </a>
-            <a class="list-group-item" ui-sref="#node" >Psychology
+            <a class="list-group-item" ui-sref="category" ng-click="categoryRoute('psychology')" >Psychology
               <img src="icons/mental state.png" alt="psychology">
             </a>
-            <a class="list-group-item" ui-sref="#node" >History
+            <a class="list-group-item" ui-sref="category" ng-click="categoryRoute('history')" >History
               <img src="icons/museum.png" alt="history">
             </a>
-            <a class="list-group-item" ui-sref="#node" >Geography
+            <a class="list-group-item" ui-sref="category" ng-click="categoryRoute('geography')" >Geography
               <img src="icons/globe.png" alt="geography">
             </a>
-            <a class="list-group-item" ui-sref="#node" >Health
+            <a class="list-group-item" ui-sref="category" ng-click="categoryRoute('health')" >Health
               <img src="icons/health.png" alt="health">
             </a>
-            <a class="list-group-item" ui-sref="#node" >Foreign Languages
+            <a class="list-group-item" ui-sref="category" ng-click="categoryRoute('foreignLanguage')" >Foreign Languages
               <img src="icons/google translate.png" alt="language">
             </a>
           </div>
@@ -74,29 +74,33 @@
             <p class="pQuote"><i>An investment in knowledge pays the best interest.</i>
               <br>
               <small class="quoter">- Benjamin Franklin</small></p>
+            </div>
           </div>
+          <!-- <div class="row karmaBox">
+          <div class="col-sm-6">
+          <img class="karma" src="icons/karma.png" alt="karma">
         </div>
-        <!-- <div class="row karmaBox">
-        <div class="col-sm-6">
-        <img class="karma" src="icons/karma.png" alt="karma">
+        <div class="col-sm-6"></div>
+      </div> -->
+
+
+    </div>
+    <div class="col-sm-9">
+
+      <!-- PRIMARY BODY CONTENT AREA -->
+
+      <div class="row primaryBody">
+
+        <ui-view></ui-view>
       </div>
-      <div class="col-sm-6"></div>
-    </div> -->
-
-
-  </div>
-  <div class="col-sm-9">
-
-    <!-- PRIMARY BODY CONTENT AREA -->
-
-    <div class="row primaryBody">
-
-      <ui-view></ui-view>
     </div>
   </div>
-</div>
 
-<img class="karma" src="icons/karma.png" alt="karma">
+
+
+  <div>
+    <img class="karma" src="icons/karma.png" alt="karma" ng-click="pointDisplay()">
+  </div>
 </div>
 <!-- <footer class="footer">
 <span> thshssh</span> -->

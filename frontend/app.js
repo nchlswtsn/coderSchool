@@ -1,19 +1,24 @@
 var app = angular.module('coderSchool', ['ui.router']);
 
-app.controller('MainCtrl', ['$scope', function($scope){
- console.log('Main');
+app.controller('MainCtrl', ['$scope', '$http', function($scope, $http){
+  function categoryRoute(category){
+    $http.get('http://localhost:3000/' + category)
+      .success(function(response) {
+        $scope.titles = response.topTen;
+      });
+  }
+ function pointDisplay(){
+
+ }
 
 }])
 
-.controller('CategoryCtrl', function ($scope){
-  console.log('hello');
-  $scope.subcategories =[];
-  for (var i = 0; i <=10; i++){
-    $scope.subcategories.push(i*30000)
+// .controller('CategoryCtrl', function ($scope){
+//   function categoryRoute(category){
+//     console.log('Categories');
+//   }
 
-  }
-
-})
+// })
 
 
 
@@ -21,14 +26,14 @@ app.config(['$stateProvider', '$urlRouterProvider' ,function ($stateProvider, $u
   $stateProvider
     .state('home', {
       url:'/home',
-      templateUrl: '/home.html',
+      templateUrl: 'templates/home.html',
       controller: 'MainCtrl'
     })
       .state('category', {
         url:'/category',
-        templateUrl: '/category.html',
-        controller: 'CategoryCtrl'
+        templateUrl: 'templates/category.html',
+        controller: 'MainCtrl'
       });
 
-    $urlRouterProvider.otherwise('home')
+    $urlRouterProvider.otherwise('/home')
 }])
