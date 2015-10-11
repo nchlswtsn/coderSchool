@@ -16,11 +16,12 @@
 <body ng-app="coderSchool" ng-controller="MainCtrl">
   <nav class="navbar navbar-default">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <i ui-sref="home" class="fa fa-graduation-cap"></i>
-        <span class="bringToMiddle"><h1>E.D.U. <span><small>A Community for Learning.</small></span></h1></span>
+      <div class="navbar-header karmaLogo">
+        <img class="eduTitle" src="karmalogo.png" alt="EDUKarma">
+        <!-- <i ui-sref="home" class="fa fa-graduation-cap"></i> -->
+        <span class="bringToMiddle"><h1><span class="KarmaTitle">Karma</span></h1></span>
       </div>
-
+      <!-- <span><small>A Community for Learning.</small></span> -->
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
@@ -74,31 +75,31 @@
           </div>
         </div>
         <!-- <div class="row karmaBox">
-          <div class="col-sm-6">
-            <img class="karma" src="icons/karma.png" alt="karma">
-          </div>
-          <div class="col-sm-6"></div>
-        </div> -->
-
-
+        <div class="col-sm-6">
+        <img class="karma" src="icons/karma.png" alt="karma">
       </div>
-      <div class="col-sm-9">
+      <div class="col-sm-6"></div>
+    </div> -->
 
-<!-- PRIMARY BODY CONTENT AREA -->
 
-        <div class="row primaryBody">
-
-          <ui-view></ui-view>
-        </div>
-      </div>
-    </div>
-    <img class="karma" src="icons/karma.png" alt="karma">
   </div>
-  <!-- <footer class="footer">
-    <span> thshssh</span> -->
-     <!-- <div class="container"> -->
-       <!-- <p class="text-muted">Place sticky footer content here.</p> -->
-     <!-- </div> -->
-   <!-- </footer> -->
+  <div class="col-sm-9">
+
+    <!-- PRIMARY BODY CONTENT AREA -->
+
+    <div class="row primaryBody">
+
+      <ui-view></ui-view>
+    </div>
+  </div>
+</div>
+<img class="karma" src="icons/karma.png" alt="karma">
+</div>
+<!-- <footer class="footer">
+<span> thshssh</span> -->
+<!-- <div class="container"> -->
+<!-- <p class="text-muted">Place sticky footer content here.</p> -->
+<!-- </div> -->
+<!-- </footer> -->
 </body>
 </html>
